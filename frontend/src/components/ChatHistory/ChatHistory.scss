@@ -1,0 +1,28 @@
+// define variables
+
+$chat-bg: #f7f7f7;
+$chat-margin: 0;
+$chat-padding: 20px;
+$chat-title-margin: 0;
+$chat-title-padding: 0;
+
+// define mixins
+
+@mixin reset-margin-padding {
+  margin: $chat-margin;
+  padding: $chat-padding;
+}
+
+// define styles
+
+.ChatHistory {
+  background-color: $chat-bg;
+  @include reset-margin-padding; // use mixin
+    text-align: left;
+  h2 {
+    @include reset-margin-padding; 
+   // use mixin
+  }
+
+  
+}
